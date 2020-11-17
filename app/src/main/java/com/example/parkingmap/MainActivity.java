@@ -52,6 +52,7 @@ import noman.googleplaces.PlacesException;
 import noman.googleplaces.PlacesListener;
 
 
+
 public class MainActivity extends AppCompatActivity
         implements OnMapReadyCallback,
         ActivityCompat.OnRequestPermissionsResultCallback,
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity
     private LocationRequest locationRequest;
     private Location location;
 
+    private Button moveButton;
 
     private View mLayout;  // Snackbar 사용하기 위해서는 View가 필요합니다.
     // (참고로 Toast에서는 Context가 필요했습니다.)
@@ -99,7 +101,15 @@ public class MainActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_main);
 
+        moveButton = (Button)findViewById(R.id.moveButton);
 
+        moveButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), Price.class);
+                startActivity(intent);
+            }
+        });
         previous_marker = new ArrayList<Marker>();
 
         Button button = (Button)findViewById(R.id.button);
@@ -605,7 +615,6 @@ public class MainActivity extends AppCompatActivity
                 .build()
                 .execute();
     }
-
 
     }
 
