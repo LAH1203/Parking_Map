@@ -25,3 +25,8 @@
 ![Parkingmap_price01](https://user-images.githubusercontent.com/57928612/99361020-ce1bed00-28f4-11eb-9bc7-a83f50262f61.jpg)
 
 ![Parkingmap_price02](https://user-images.githubusercontent.com/57928612/99361029-d07e4700-28f4-11eb-8334-6d03183f1a14.jpg)
+
+
+### :white_check_mark:아쉬운 점
++ 아는 것이 거의 없는 상태에서 주먹구구식으로 프로젝트를 시작했기 때문에 구글에 의존하여 코딩을 했어서 직접적으로 짠 코드가 거의 없었다. 앞으로는 충분한 공부를 한 뒤 개발을 시도해야겠다.
++ api를 중심으로 여러 기능을 구현해야 했으나 단지 api를 불러왔다는 것만으로 만족하여 프로젝트를 조기종료한 점이 가장 아쉬운 것 같다. 다음부터는 여러 기능을 구현하는 서비스를 만들어 봐야겠다.
